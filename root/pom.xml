@@ -8,11 +8,11 @@
 		<version>3.4.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.objectoriented</groupId>
-	<artifactId>mockapi</artifactId>
+	<groupId>com.docsbymario</groupId>
+	<artifactId>root</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>mockapi</name>
+	<name>root</name>
 	<description>Spring Boot-based Mock API for Testing</description>
 	<url/>
 	<licenses>
