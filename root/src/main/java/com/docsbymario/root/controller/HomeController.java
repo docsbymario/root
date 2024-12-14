@@ -11,4 +11,11 @@ public class HomeController {
         modelAndView.setViewName("templates/index.html");
         return modelAndView;
     }
+
+    @GetMapping("/apps")
+    public ModelAndView getApps() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("templates/apps.html");
+        return modelAndView;
+    }
 }

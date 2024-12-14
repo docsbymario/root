@@ -148,7 +148,7 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-    .menu-search, .menu-items {
+    .menu-search, .menu-item-text {
         display: none;
     }
 }
@@ -160,10 +160,11 @@ a {
 input[type=text] {
     background-color: #242424;
     border: 1px solid #696969;
-    border-radius: .75vh;
+    border-radius: 3px;
     color: white;
     padding: 1vh;
-    min-width: 55vh;
+    min-width: 15rem;
+    width: 100%;
 }
 
 input[type=text]:hover {
@@ -173,6 +174,10 @@ input[type=text]:hover {
 input[type=text]:focus {
     background-color: #2c2c2c;
     outline: none;
+}
+
+.searchbox {
+    flex: 1;
 }
 
 /* End Inputs */
