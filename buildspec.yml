@@ -18,7 +18,7 @@ phases:
       - echo Moving artifact to the root of the deployment bundle...
       - cd ..
       - cp root/target/root-0.0.1-SNAPSHOT.jar ./application.jar
-      - echo "web{{':'}} java -jar application.jar" > Procfile
+      - echo "web:java -jar application.jar" > Procfile
       - ls
 artifacts:
   files:
