@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+  pre_build:
+    commands:
+      - echo Preparing for build...
+  build:
+    commands:
+      - echo Building the project with Maven...
+      - mvn clean install
+  post_build:
+    commands:
+      - echo Build complete.
+      - mvn test
+artifacts:
+  files:
+    - target/root-0.0.1-SNAPSHOT.jar
