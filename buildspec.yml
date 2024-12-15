@@ -1,17 +1,11 @@
 version: 0.2
 
-env:
-  variables:
-    JAVA_HOME: /usr/lib/jvm/java-21-amazon-corretto
-    PATH: /usr/lib/jvm/java-21-amazon-corretto/bin:$PATH
-
 phases:
   install:
+    runtime-versions:
+      java: corretto21
     commands:
-      - echo Removing default Java version...
-      - yum remove -y java
-      - echo Installing Java 21 Corretto...
-      - yum install -y java-21-amazon-corretto
+      - echo Updating to corretto21
   build:
     commands:
       - echo Building the project with Maven...
