@@ -15,6 +15,9 @@ phases:
     commands:
       - echo Build complete.
       - mvn test
+      - echo Moving artifact to the root of the deployment bundle...
+      - cp root/target/root-0.0.1-SNAPSHOT.jar ./application.jar
+      - echo "web: java -jar application.jar" > Procfile
 artifacts:
   files:
     - root/target/root-0.0.1-SNAPSHOT.jar
