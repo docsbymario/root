@@ -11,7 +11,7 @@ phases:
   pre_build:
     commands:
       - echo "Setting Java 21 as the default version..."
-	      - export JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto
+      - export JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto
       - export PATH=$JAVA_HOME/bin:$PATH  
   build:
     commands:
