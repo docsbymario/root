@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Docs by Mario</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/233ce86d92.js" crossorigin="anonymous"></script>
@@ -10,40 +10,47 @@
         function closePopup() {
             document.getElementById("popup").style.display = "none";
         }
+
+
+
+
+
+
     </script>
 </head>
 <body>
-    <!--
-    <div class="popup" id="popup">
-        <div class="popup-text">
-            This is a docsbymario.com website. Find out more about <a href="https://docsbymario.com">our products</a>.
+<!--
+<div class="popup" id="popup">
+    <div class="popup-text">
+        This is a docsbymario.com website. Find out more about <a href="https://docsbymario.com">our products</a>.
+    </div>
+    <div class="popup-close">
+        <a href="#" onClick="closePopup()">X</a>
+    </div>
+</div>
+-->
+<div class="menu">
+    <div class="menu-title">
+        <a href="/">Docs by Mario</a>
+    </div>
+    <div class="menu-search searchbox">
+        <input type="text" placeholder="Type something here to search...">
+    </div>
+    <div class="menu-items">
+        <div class="menu-item">
+            <a href="/apps"><i class="fa-solid fa-stream"></i> <span class="menu-item-text">Apps</span></a>
         </div>
-        <div class="popup-close">
-            <a href="#" onClick="closePopup()">X</a>
+        <div class="menu-item">
+            <a href="/blog"><i class="fa-solid fa-book"></i> <span class="menu-item-text">Blog</span></a>
+        </div>
+        <div class="menu-item">
+            <a href="/downloads"><i class="fa-solid fa-download"></i> <span class="menu-item-text">Downloads</span></a>
         </div>
     </div>
-    -->
-    <div class="menu">
-        <div class="menu-title">
-            <a href="/">Docs by Mario</a>
-        </div>
-        <div class="menu-search searchbox">
-            <input type="text" placeholder="Type something here to search...">
-        </div>
-        <div class="menu-items">
-                <div class="menu-item">
-                    <a href="/apps"><i class="fa-solid fa-stream"></i> <span class="menu-item-text">Apps</span></a>
-                </div>
-                <div class="menu-item">
-                    <a href="/blog"><i class="fa-solid fa-book"></i> <span class="menu-item-text">Blog</span></a>
-                </div>
-                <div class="menu-item">
-                    <a href="/downloads"><i class="fa-solid fa-download"></i> <span class="menu-item-text">Downloads</span></a>
-                </div>
-        </div>
-    </div>
-    <div class="area">
-        <div class="area-small box-area">
+</div>
+<div class="area">
+    <div class="area-small">
+        <div class="box-area">
             <div class="box">
                 <div class="box-header">
                     Short info
@@ -81,8 +88,11 @@
                         </div>
                         <div class="group-item secondary">
                             <div class="link-container">
-                                <a class="link-item" href="https://github.com/mateasmario"><i class="fa-brands fa-github"></i> GitHub</a>
-                                <a class="link-item" href="https://stackoverflow.com/users/14808001/mario-matea%c8%99"><i class="fa-brands fa-stack-overflow"></i> Stack Overflow</a>
+                                <a class="link-item" href="https://github.com/mateasmario"><i
+                                        class="fa-brands fa-github"></i> GitHub</a>
+                                <a class="link-item"
+                                   href="https://stackoverflow.com/users/14808001/mario-matea%c8%99"><i
+                                        class="fa-brands fa-stack-overflow"></i> Stack Overflow</a>
                             </div>
                         </div>
                     </div>
@@ -92,44 +102,98 @@
                         </div>
                         <div class="group-item secondary">
                             <div class="link-container">
-                                <a class="link-item" href="https://www.linkedin.com/in/mario-matea%C8%99-b31628209/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                                <a class="link-item" href="https://www.facebook.com/mateasmario/"><i class="fa-brands fa-facebook"></i> Facebook</a>
-                                <a class="link-item" href="https://www.instagram.com/mateas.mario/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                                <a class="link-item" href="https://www.linkedin.com/in/mario-matea%C8%99-b31628209/"><i
+                                        class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                                <a class="link-item" href="https://www.facebook.com/mateasmario/"><i
+                                        class="fa-brands fa-facebook"></i> Facebook</a>
+                                <a class="link-item" href="https://www.instagram.com/mateas.mario/"><i
+                                        class="fa-brands fa-instagram"></i> Instagram</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="area-medium">
-            <h1>About me</h1>
-            <p>I'm a computer engineer currently living in Timișoara, Romania, and am working as a Java Developer for IBM. My plan is to create reliable open-source software solutions and documentation, both for myself and for others engaged in this field. My products can be found on the <a href="/apps">Apps</a> page, while this whole project is open-source and can be forked (take a look over <a href="https://github.com/docsbymario">here</a>).</p>
-            <p>I have graduated from University Politehnica of Timișoara, with a bachelor's degree in Computer Engineering. I'm now working on my master's degree in Software Engineering at the same university, where I also teach several labs.</p>
-            <p>My initial contact with open-source solution started while working for my bachelor's thesis, where I developed an open-source code editor, focused on simplicity. The repository can be accessed from my <a href="https://github.com/mateasmario/pie">GitHub page</a>, where you can analyze the spaghetti code I've written and also download the latest binaries. I'll try to throw in several updates regularly, either bug fixes or new features.</p>
-            <p>I'll also start a blog where I'll keep my findings related to object-oriented software development, that might also be helpful to other starting developers. Keep checking this website:) maybe you'll be pleasantly surprised.</p>
-            <p>All the best,</p>
-            <p>Mario M.</p>
-        </div>
     </div>
-    <div class="area">
-        <div class="area-medium">
-            <h1>Suggestions</h1>
-            <h3>Cloud Platform Preparation Courses</h3>
-            <p>During my student years, I got certified in both Azure and Amazon Web Services technologies, focusing on AWS due to better user experience (won't touch Azure again). However, I couldn't have completed my cert trainings without <a href="https://www.udemy.com/user/stephane-maarek/?srsltid=AfmBOoobszx2v4GDpdOgIre7j6V0Os07IqhVb2Ewgieases7nJ-Y2Hfm">Stephane Maarek</a>'s amazing courses on Udemy. His theory courses, along with the preparation exams he offers both at the end of each chapter and as separate courses, will 100% guarantee you an easy win at the certification exam. Theory is not enough, though. After getting certified, make sure you start playing with AWS's interface. You'll fall in love faster than you ever imagined.</p>
-            <h3>Java Language and Java Technologies</h3>
-            <p><a href="https://www.selikoff.net/java-foundations/">Scott Selikoff and Jeanne Boyarsky's books</a> did the thing for me. The preparation for OCA8's exam actually helped me understand Java's core implementation, bit by bit. Would proudly spend half of my salary every month, if they released new books.</p>
-            <p>Regarding frameworks, I'm most oriented towards Spring (not only Boot, but also the Batch part). <a href="https://spring.io/blog/2024/04/10/spring-academy-pro-content-now-free-to-access">Spring Academy</a> is a great place to start learning about it. Please try their videos. Skimming through their documentation can be harsh, because Spring isn't always backwards compatible and they rarely update their documentation... If there's one thing I hate about Spring, it's its way of staying up to date with its own implementation.</p>
-        </div>
-        <div class="area-small box-area">
+    <div class="area-medium">
+        <h1>About me</h1>
+        <p>I'm a computer engineer currently living in Timișoara, Romania, and am working as a Java Developer for IBM.
+            My plan is to create reliable open-source software solutions and documentation, both for myself and for
+            others engaged in this field. My products can be found on the <a href="/apps">Apps</a> page, while this
+            whole project is open-source and can be forked (take a look over <a href="https://github.com/docsbymario">here</a>).
+        </p>
+        <p>I have graduated from University Politehnica of Timișoara, with a bachelor's degree in Computer Engineering.
+            I'm now working on my master's degree in Software Engineering at the same university, where I also teach
+            several labs.</p>
+        <p>My initial contact with open-source solution started while working for my bachelor's thesis, where I
+            developed an open-source code editor, focused on simplicity. The repository can be accessed from my <a
+                    href="https://github.com/mateasmario/pie">GitHub page</a>, where you can analyze the spaghetti code
+            I've written and also download the latest binaries. I'll try to throw in several updates regularly, either
+            bug fixes or new features.</p>
+        <p>I'll also start a blog where I'll keep my findings related to object-oriented software development, that
+            might also be helpful to other starting developers. Keep checking this website:) maybe you'll be pleasantly
+            surprised.</p>
+        <p>All the best,</p>
+        <p>Mario M.</p>
+    </div>
+</div>
+<div class="area">
+    <div class="area-medium">
+        <h1>Suggestions</h1>
+        <h3>Cloud Platform Preparation Courses</h3>
+        <p>During my student years, I got certified in both Azure and Amazon Web Services technologies, focusing on AWS
+            due to better user experience (won't touch Azure again). However, I couldn't have completed my cert
+            trainings without <a
+                    href="https://www.udemy.com/user/stephane-maarek/?srsltid=AfmBOoobszx2v4GDpdOgIre7j6V0Os07IqhVb2Ewgieases7nJ-Y2Hfm">Stephane
+                Maarek</a>'s amazing courses on Udemy. His theory courses, along with the preparation exams he offers
+            both at the end of each chapter and as separate courses, will 100% guarantee you an easy win at the
+            certification exam. Theory is not enough, though. After getting certified, make sure you start playing with
+            AWS's interface. You'll fall in love faster than you ever imagined.</p>
+        <h3>Java Language and Java Technologies</h3>
+        <p><a href="https://www.selikoff.net/java-foundations/">Scott Selikoff and Jeanne Boyarsky's books</a> did the
+            thing for me. The preparation for OCA8's exam actually helped me understand Java's core implementation, bit
+            by bit. Would proudly spend half of my salary every month, if they released new books.</p>
+        <p>Regarding frameworks, I'm most oriented towards Spring (not only Boot, but also the Batch part). <a
+                href="https://spring.io/blog/2024/04/10/spring-academy-pro-content-now-free-to-access">Spring
+            Academy</a> is a great place to start learning about it. Please try their videos. Skimming through their
+            documentation can be harsh, because Spring isn't always backwards compatible and they rarely update their
+            documentation... If there's one thing I hate about Spring, it's its way of staying up to date with its own
+            implementation.</p>
+    </div>
+    <div class="area-small">
+        <div class="box-area">
             <div class="box">
                 <div class="box-header">
-                    Me
+                    Badge Collection
                 </div>
                 <div class="box-content">
-                    <img src="img/me.jpg" width="100%" />
+                    <div class="box-button-area">
+                        <div class="box-button">
+                            <img src="../img/certs/springcert.png" width="100" height="100"/>
+                        </div>
+                        <div class="box-button">
+                            <img src="../img/certs/awsdvacert.png" width="100" height="100"/>
+                        </div>
+                        <div class="box-button">
+                            <img src="../img/certs/awsccpcert.png" width="100" height="100"/>
+                        </div>
+                        <div class="box-button">
+                            <img src="../img/certs/ocacert.png" width="200" height="100"/>
+                        </div>
+                        <div class="box-button">
+                            <img src="../img/certs/ocacert.png" width="200" height="100"/>
+                        </div>
+                        <div class="box-button">
+                            <img src="../img/certs/scacert.png" width="100" height="100"/>
+                        </div>
+                        <div class="box-button">
+                            <img src="../img/certs/azurecert.png" width="100" height="100"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>

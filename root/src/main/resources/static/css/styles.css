@@ -52,6 +52,10 @@ a {
     color:white;
 }
 
+.third {
+    color: #706f6f;
+}
+
 .blue {
     background-color: #0cadea;
 }
@@ -276,6 +280,7 @@ input[type=text]:focus {
     flex-direction: column;
     padding: .75em;
     gap: 5px;
+    justify-content: flex-start;
 }
 
 .box-content-item {
@@ -335,6 +340,26 @@ input[type=text]:focus {
 
 .area-grid a {
     text-decoration: none;
+}
+
+.box-button-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamically wrapping grid */
+    justify-content: center;
+}
+
+.box-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: .5rem;
+    max-height: 100px;
+}
+
+.box-button:hover {
+    background-color: #3d3d3d;
+    transition: all .1s ease-in-out;
 }
 
 /* End Box */
