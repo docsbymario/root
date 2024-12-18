@@ -18,7 +18,7 @@ phases:
       - mvn test
       - echo Moving artifact to the root of the deployment bundle...
       - cd ..
-      - cp root/target/project-0.0.1-SNAPSHOT.jar ./application.jar
+      - cp project/target/project-0.0.1-SNAPSHOT.jar ./application.jar
       - aws s3 cp s3://docsbymario-env/.env ./.env --region eu-north-1
 artifacts:
   files:
