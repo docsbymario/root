@@ -27,6 +27,8 @@
             }
         }
 
+
+
     </script>
 </head>
 <body>
@@ -40,31 +42,34 @@
     </div>
 </div>
 -->
-<div class="menu">
-    <div class="menu-title">
-        <a href="/">Docs by Mario</a>
+<form action="apps" method="GET">
+    <input type="submit" style="display: none">
+    <div class="menu">
+        <div class="menu-title">
+            <a href="/">Docs by Mario</a>
+        </div>
+        <div class="menu-search searchbox">
+            <input type="text" placeholder="Type something here to search..." name="app-query">
+        </div>
+        <div class="menu-items">
+            <div class="menu-item mobile" onclick="showSearchBarOnMobile()" id="search-mobile-button">
+                <i class="fa-solid fa-search"> </i>
+            </div>
+            <div class="menu-item">
+                <a href="/apps"><i class="fa-solid fa-stream"></i> <span class="menu-item-text">Apps</span></a>
+            </div>
+            <div class="menu-item">
+                <a href="/blog"><i class="fa-solid fa-book"></i> <span class="menu-item-text">Blog</span></a>
+            </div>
+            <div class="menu-item">
+                <a href="/downloads"><i class="fa-solid fa-download"></i> <span class="menu-item-text">Downloads</span></a>
+            </div>
+        </div>
     </div>
-    <div class="menu-search searchbox">
-        <input type="text" placeholder="Type something here to search...">
+    <div class="menu" style="display: none" id="search-mobile">
+        <input type="text" placeholder="Type something here to search..." name="app-query-mobile">
     </div>
-    <div class="menu-items">
-        <div class="menu-item mobile" onclick="showSearchBarOnMobile()" id="search-mobile-button">
-            <i class="fa-solid fa-search"> </i>
-        </div>
-        <div class="menu-item">
-            <a href="/apps"><i class="fa-solid fa-stream"></i> <span class="menu-item-text">Apps</span></a>
-        </div>
-        <div class="menu-item">
-            <a href="/blog"><i class="fa-solid fa-book"></i> <span class="menu-item-text">Blog</span></a>
-        </div>
-        <div class="menu-item">
-            <a href="/downloads"><i class="fa-solid fa-download"></i> <span class="menu-item-text">Downloads</span></a>
-        </div>
-    </div>
-</div>
-<div class="menu" style="display: none" id="search-mobile">
-    <input type="text" placeholder="Type something here to search...">
-</div>
+</form>
 <div class="area">
     <div class="area-small">
         <div class="box-area">
