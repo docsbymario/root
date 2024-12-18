@@ -18,9 +18,8 @@ phases:
       - echo Moving artifact to the root of the deployment bundle...
       - cd ..
       - cp root/target/root-0.0.1-SNAPSHOT.jar ./application.jar
-      - echo "web:java -jar application.jar" > Procfile
+      - aws s3 cp s3://docsbymario-env/.env ./.env
       - ls
 artifacts:
   files:
     - application.jar
-    - Procfile
