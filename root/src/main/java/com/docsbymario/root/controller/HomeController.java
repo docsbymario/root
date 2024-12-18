@@ -23,7 +23,7 @@ public class HomeController {
     @GetMapping("/apps")
     public ModelAndView getApps(@RequestParam(name="app-query", required=false) String appQuery,
                                 @RequestParam(name="app-query-mobile", required=false) String appQueryMobile) {
-        String query = !appQueryMobile.trim().isEmpty() ? appQueryMobile : appQuery;
+        String query = appQueryMobile != null && !appQueryMobile.trim().isEmpty() ? appQueryMobile : appQuery;
 
         List<App> apps = appService.findAll().stream()
                 .filter(app -> app.getName().toLowerCase().contains(query.toLowerCase()) || app.getDescription().toLowerCase().contains(query.toLowerCase()))
