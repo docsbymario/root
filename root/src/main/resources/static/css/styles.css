@@ -173,6 +173,12 @@ a {
     }
 }
 
+@media screen and (min-width: 850px) {
+    .mobile {
+        display: none;
+    }
+}
+
 /* End Menu */
 
 /* Start Inputs */
