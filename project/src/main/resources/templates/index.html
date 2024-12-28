@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Docs by Mario</title>
+    <title>DocsByMario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/styles.css">
@@ -31,7 +31,7 @@
 
     </script>
 </head>
-<body>
+<body class="body-dark">
 <!--
 <div class="popup" id="popup">
     <div class="popup-text">
@@ -44,30 +44,30 @@
 -->
 <form action="apps" method="GET">
     <input type="submit" style="display: none">
-    <div class="menu">
-        <div class="menu-title">
-            <a href="/">Docs by Mario</a>
+    <div class="menu dark">
+        <div class="menu-title dark logo">
+            <a href="/">DocsByMario</a>
         </div>
         <div class="menu-search searchbox">
-            <input type="text" placeholder="Type something here to search..." name="app-query">
+            <input type="text" class="textbox dark" placeholder="Type something here to search..." name="app-query">
         </div>
         <div class="menu-items">
-            <div class="menu-item mobile" onclick="showSearchBarOnMobile()" id="search-mobile-button">
+            <div class="menu-item mobile dark" onclick="showSearchBarOnMobile()" id="search-mobile-button">
                 <i class="fa-solid fa-search"> </i>
             </div>
-            <div class="menu-item">
+            <div class="menu-item dark">
                 <a href="http://docsbymario.com/apps"><i class="fa-solid fa-stream"></i> <span class="menu-item-text">Apps</span></a>
             </div>
-            <div class="menu-item">
+            <div class="menu-item dark">
                 <a href="#"><i class="fa-solid fa-book"></i> <span class="menu-item-text">Blog</span></a>
             </div>
-            <div class="menu-item">
+            <div class="menu-item dark">
                 <a href="#"><i class="fa-solid fa-download"></i> <span class="menu-item-text">Downloads</span></a>
             </div>
         </div>
     </div>
-    <div class="menu" style="display: none" id="search-mobile">
-        <input type="text" placeholder="Type something here to search..." name="app-query-mobile">
+    <div class="menu dark" style="display: none" id="search-mobile">
+        <input type="text" class="textbox dark" placeholder="Type something here to search..." name="app-query-mobile">
     </div>
 </form>
 <div class="area">
