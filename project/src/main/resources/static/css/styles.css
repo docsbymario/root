@@ -20,6 +20,11 @@
   src: url(../fonts/Lexend-Medium.ttf);
 }
 
+@font-face {
+  font-family: Palatino;
+  src: url(../fonts/Palatino.ttf);
+}
+
 /* End Fonts */
 
 /* Start General */
@@ -388,13 +393,45 @@ a {
     gap: .5rem;
 }
 
+.area-quote {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    color: black;
+    height: 10rem;
+}
+
+.quote {
+    font-family: Palatino;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.quote-author {
+    font-family: Palatino;
+    font-size: 1rem;
+}
+
 .area {
-    padding: 1rem;
     font-size: 1rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 850px) {
+    .area {
+        gap: 0;
+    }
+}
+
+.padded {
+    padding: 1rem;
 }
 
 .area-grid {
@@ -406,13 +443,25 @@ a {
 }
 
 .area-small {
-    flex: 1 1 20rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 20rem;
     flex-wrap: wrap;
 }
 
 .area-medium {
     flex: 3 1 30rem;
     flex-wrap: wrap;
+}
+
+.whitespace {
+    min-height: 10rem;
+}
+
+@media screen and (max-width: 850px) {
+    .whitespace {
+        display: none;
+    }
 }
 
 .box-area {
