@@ -11,6 +11,7 @@ public class App {
     private String icon;
     private String description;
     private String url;
+    private int index;
 
     public String getId() {
         return id;
@@ -50,5 +51,13 @@ public class App {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
     }
 }

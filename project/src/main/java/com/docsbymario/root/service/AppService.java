@@ -13,6 +13,6 @@ public class AppService {
     private AppRepository appRepository;
 
     public List<App> findAll() {
-        return appRepository.findAll();
+        return appRepository.findAllByOrderByIndex();
     }
 }

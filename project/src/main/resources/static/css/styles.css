@@ -63,19 +63,39 @@ a {
     height: 100%;
 }
 
-.btn-dark {
-    padding: .5rem;
+.btn {
+    padding: .75rem;
     border: 0;
     border-radius: 5px;
-    height: 2rem;
+    color: white;
+}
+
+.btn-small {
     width: 5rem;
+    height: 2rem;
+}
+
+.btn-large {
+    width: 8rem;
+}
+
+.btn-dark {
     background-color: #2d2d2d;
     color: white;
 }
 
+.btn-light {
+    background-color: white;
+    color: black;
+}
+
 .btn-dark:hover {
-    background-color: #3a3a3a;
+    background-color: #f7f7f7;
     transition: all .05s ease-in-out;
+}
+
+.btn-light:hover {
+    background-color: #dadada;
 }
 
 .noborder {
@@ -341,6 +361,33 @@ a {
 
 /** Start Box **/
 
+.area-carousel {
+    display: flex;
+    flex-direction: column;
+    max-height: 30rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.area-carousel-row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.area-carousel-description {
+    max-width: 25rem;
+}
+
+.area-carousel-buttons {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: .5rem;
+}
+
 .area {
     padding: 1rem;
     font-size: 1rem;
@@ -497,6 +544,10 @@ a {
 .box-button:hover {
     background-color: #3d3d3d;
     transition: all .1s ease-in-out;
+}
+
+.title {
+    font-size: 2rem;
 }
 
 /* End Box */
