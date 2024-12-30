@@ -249,8 +249,37 @@ a {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
     box-sizing: border-box;
     width: 100%;
-    position: sticky;
     top: 0;
+}
+
+.menugroup {
+    position: fixed;
+    width: 100%;
+}
+
+.transparent {
+    background-color: transparent;
+    color: white;
+}
+
+.transparent:focus {
+    outline: none;
+}
+
+.transparent.textbox:hover {
+    background-color: rgba(44, 44, 44, 0.75);
+}
+
+.transparent.textbox:focus {
+    background-color: rgba(44, 44, 44, 0.75);
+}
+
+.transparent.menu-item:hover {
+    background-color: rgba(44, 44, 44, 0.75);
+}
+
+.transparent.menu-title a:hover {
+    background-color: rgba(44, 44, 44, 0.75);
 }
 
 .menu-title {
@@ -370,10 +399,15 @@ a {
     display: flex;
     flex-direction: column;
     max-height: 30rem;
-    align-items: center;
+}
+
+.carousel-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
-    padding: 2rem;
 }
 
 .area-carousel-row {

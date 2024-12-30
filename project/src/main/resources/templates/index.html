@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://docsbymario-env.s3.eu-north-1.amazonaws.com/fontawesome/css/all.min.css?v=1.0">
 
     <script>
+        const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+        const remInPixels = 5 * rootFontSize;
+
         var searchBarDisplayed = false;
 
         function closePopup() {
@@ -28,9 +31,21 @@
             }
         }
 
+        window.addEventListener("scroll", function() {
 
-
-
+          if(this.pageYOffset > remInPixels) {
+            document.getElementById("menu").classList.remove("transparent");
+            document.getElementById("menu").classList.add("dark");
+            document.getElementById("search-mobile").classList.remove("transparent");
+            document.getElementById("search-mobile").classList.add("dark");
+          }
+          else {
+            document.getElementById("menu").classList.remove("dark");
+            document.getElementById("menu").classList.add("transparent");
+            document.getElementById("search-mobile").classList.remove("dark");
+            document.getElementById("search-mobile").classList.add("transparent");
+          }
+        })
 
 
     </script>
@@ -46,49 +61,59 @@
     </div>
 </div>
 -->
-<form style="margin: 0" action="apps" method="GET">
-    <input type="submit" style="display: none">
-    <div class="menu dark">
-        <div class="menu-title dark logo">
-            <a href="/">DocsByMario</a>
-        </div>
-        <div class="menu-search searchbox">
-            <input type="text" class="textbox dark" placeholder="Type something here to search..." name="app-query">
-        </div>
-        <div class="menu-items">
-            <div class="menu-item mobile dark" onclick="showSearchBarOnMobile()" id="search-mobile-button">
-                <i class="fa-solid fa-search"> </i>
-            </div>
-            <div class="menu-item dark">
-                <a th:href="@{/apps}"><i class="fa-solid fa-stream"></i> <span class="menu-item-text">Apps</span></a>
-            </div>
-            <div class="menu-item dark">
-                <a href="#"><i class="fa-solid fa-book"></i> <span class="menu-item-text">Blog</span></a>
-            </div>
-            <div class="menu-item dark">
-                <a href="#"><i class="fa-solid fa-download"></i> <span class="menu-item-text">Downloads</span></a>
-            </div>
-        </div>
-    </div>
-    <div class="menu dark" style="display: none" id="search-mobile">
-        <input type="text" class="textbox dark" placeholder="Type something here to search..." name="app-query-mobile">
-    </div>
-</form>
+
 <section class="area-carousel magicpattern">
-    <div class="area-carousel-row title">
-        Your free companion in software development
-    </div>
-    <div class="area-carousel-row">
-        <span class="area-carousel-description">The project I've built is meant to offer a wide range of functionalities for developer-oriented tasks.</span>
-    </div>
-    <div class="area-carousel-row">
-        <div class="area-carousel-buttons">
-            <a th:href="@{/apps}">
-                <button class="btn btn-light btn-large"><i class="fa-solid fa-stream"></i> Discover Apps</button>
-            </a>
-            <a href="http://my.docsbymario.com">
-                <button class="btn btn-light btn-large"><i class="fa-solid fa-user"></i> My Account</button>
-            </a>
+    <form style="margin: 0;" action="apps" method="GET">
+        <input type="submit" style="display: none">
+        <div class="menugroup">
+            <div class="menu transparent" id="menu">
+                <div class="menu-title logo transparent">
+                    <a href="/">DocsByMario</a>
+                </div>
+                <div class="menu-search searchbox">
+                    <input type="text" class="textbox transparent" placeholder="Type something here to search..."
+                           name="app-query">
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item mobile transparent" onclick="showSearchBarOnMobile()"
+                         id="search-mobile-button">
+                        <i class="fa-solid fa-search"> </i>
+                    </div>
+                    <div class="menu-item transparent">
+                        <a th:href="@{/apps}"><i class="fa-solid fa-stream"></i> <span
+                                class="menu-item-text">Apps</span></a>
+                    </div>
+                    <div class="menu-item transparent">
+                        <a href="#"><i class="fa-solid fa-book"></i> <span class="menu-item-text">Blog</span></a>
+                    </div>
+                    <div class="menu-item transparent">
+                        <a href="#"><i class="fa-solid fa-download"></i> <span
+                                class="menu-item-text">Downloads</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu transparent" style="display: none" id="search-mobile">
+                <input type="text" class="textbox transparent" placeholder="Type something here to search..."
+                       name="app-query-mobile">
+            </div>
+        </div>
+    </form>
+    <div class="carousel-center">
+        <div class="area-carousel-row title">
+            Your free companion in software development
+        </div>
+        <div class="area-carousel-row">
+            <span class="area-carousel-description">The project I've built is meant to offer a wide range of functionalities for developer-oriented tasks.</span>
+        </div>
+        <div class="area-carousel-row">
+            <div class="area-carousel-buttons">
+                <a th:href="@{/apps}">
+                    <button class="btn btn-light btn-large"><i class="fa-solid fa-stream"></i> Discover Apps</button>
+                </a>
+                <a href="http://my.docsbymario.com">
+                    <button class="btn btn-light btn-large"><i class="fa-solid fa-user"></i> My Account</button>
+                </a>
+            </div>
         </div>
     </div>
 </section>
